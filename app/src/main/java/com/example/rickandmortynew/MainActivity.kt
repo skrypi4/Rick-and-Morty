@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val menuButtonCharacters = findViewById<Button>(R.id.button)
+        val menuButtonCharacters = findViewById<Button>(R.id.buttonCharacters)
 
         menuButtonCharacters.setOnClickListener {
             val intent = Intent(this@MainActivity, CharacterSpisok::class.java)

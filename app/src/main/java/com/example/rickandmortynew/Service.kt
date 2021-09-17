@@ -6,5 +6,5 @@ import retrofit2.http.GET
 
 interface Service {
     @GET("/api/character/")
-    fun charactersSpisok(): Call<Response.CharactersSpisok>
+    fun characters(): Call<Response.Characters>
 }

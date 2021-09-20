@@ -20,7 +20,7 @@ class AdapterDlyaSpiska (val ctx: Context, val resource: Int, val items: ArrayLi
             view = convertView
         }
 
-        //Picasso.get().load(items?.get(position)?.image).into(view?.findViewById<ImageView>(R.id.imageView))
+        Picasso.get().load(items?.get(position)?.image).into(view?.findViewById<ImageView>(R.id.imageView))
         view?.findViewById<TextView>(R.id.textView)?.text = items?.get(position)?.name
 
         return view!!

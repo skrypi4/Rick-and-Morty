@@ -19,18 +19,21 @@ class Response {
     )
 
     data class CharactersItems(
-        val created: String,
-        val episode: List<String>,
-        val gender: String,
         val id: Int,
-        val image: String,
-        val location: LocationFromCharacter,
         val name: String,
-        val origin: Origin,
-        val species: String,
         val status: String,
+        val species: String,
         val type: String,
-        val url: String
+        val gender: String,
+        //val origin: Origin,
+        //val location: LocationFromCharacter,
+        val origin: ArrayList<LocationFromCharacter>,
+        val location: ArrayList<Origin>,
+
+        val image: String,
+        val episode: List<String>,
+        val url: String,
+        val created: String
     )
 
     data class LocationFromCharacter(
